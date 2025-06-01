@@ -21,7 +21,7 @@ def quiz(questions):
         print("\n" + question["prompt"])
         for option in question["options"]:
             print(option)
-        you= input("\nWhat is your answer?:")
+        you= input("\nWhat is your answer?:").upper()
         if you == question["answer"]:
             points += 1
         else:
